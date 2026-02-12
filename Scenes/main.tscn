@@ -5,13 +5,37 @@
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_jjgbg"]
 distance = -402.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jjgbg"]
+
 [node name="Main" type="Node2D" unique_id=2071364567]
 
 [node name="Player" parent="." unique_id=984769019 instance=ExtResource("1_jjgbg")]
 position = Vector2(559, 318)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1216082840]
+scale = Vector2(0.9669952, 0.95197946)
+zoom = Vector2(3, 3)
+process_callback = 0
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1834281494]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=348520946]
 position = Vector2(560, 34)
 shape = SubResource("WorldBoundaryShape2D_jjgbg")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=2100072921]
+position = Vector2(698.00006, 321)
+scale = Vector2(-1.3153664, 10.895059)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1936373720]
+shape = SubResource("RectangleShape2D_jjgbg")
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D2" unique_id=2123756286]
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+scale = Vector2(1.0063498, 1)
