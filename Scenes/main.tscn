@@ -2,6 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://er68lnuutfy7" path="res://Scenes/player.tscn" id="1_jjgbg"]
 
+[sub_resource type="Curve" id="Curve_jjgbg"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.35435265), -1.9541994, 0.0, 0, 0]
+point_count = 2
+
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_jjgbg"]
 distance = -402.0
 
@@ -11,6 +15,7 @@ distance = -402.0
 
 [node name="Player" parent="." unique_id=984769019 instance=ExtResource("1_jjgbg")]
 position = Vector2(559, 318)
+dash_curve = SubResource("Curve_jjgbg")
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1216082840]
 scale = Vector2(0.9669952, 0.95197946)
@@ -21,13 +26,14 @@ drag_horizontal_enabled = true
 drag_vertical_enabled = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1834281494]
+position = Vector2(0, -9)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=348520946]
 position = Vector2(560, 34)
 shape = SubResource("WorldBoundaryShape2D_jjgbg")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=2100072921]
-position = Vector2(698.00006, 321)
+position = Vector2(669, 317)
 scale = Vector2(-1.3153664, 10.895059)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1936373720]
