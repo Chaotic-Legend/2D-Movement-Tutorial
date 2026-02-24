@@ -14,7 +14,7 @@ Please include the following context-setting data about the tutorial and segment
 OS version: Windows 11 Pro
 <br>
 Application version: Godot Engine v4.6.stable.official [89cea1439]
-
+<br>
 <ins> Description of the task/project you selected </ins>
 <br>
 The selected task will implement basic 2D player movement in the Godot Engine using a pixelated character PNG sprite, including keyboard input handling for walking, running, height jumping, wall jumping, dashing, and a responsive camera that dynamically follows the movement logic to display the gameplay. This task will follow a YouTube video tutorial titled "Godot Tutorial 2D - Beginner Level Platformer Controller" created by IcyEngine, using the time segment from approximately 00:28 to 16:56.
