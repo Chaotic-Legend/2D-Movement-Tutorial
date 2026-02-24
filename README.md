@@ -50,7 +50,7 @@ Following the YouTube video tutorial, I implemented a wall-jumping mechanism by 
 
 <ins> Brief description of the breakpoint-5 </ins>
 <br>
-Concluding with the YouTube video tutorial, I implemented multiple if statements that use these dashing variables to validate movement conditions, such as checking whether the player is already dashing, whether the dash cooldown timer has ended, and whether the player is allowed to dash based on their current state. These conditional checks perform real-time calculations to determine the dash direction, track the starting position of the dash, and measure the distance traveled so the dash does not exceed the defined maximum distance. The logic also responds differently when the player collides with obstacles during a dash, allowing the dash to stop early if a wall or other collider is detected. I also implemented logic to manage the dash cooldown by initializing, updating, and resetting a timer that prevents the player from dashing again until the cooldown duration has completed. Lastly, I configured the speed curve by navigating to "Dash Curve" in the "Inspector" and clicking on "New Curve" to modify the given curve line to control the speed of the dash over time, and I adjusted the curve so the dash begins at a high speed and gradually slows toward the end, creating a smooth and natural-feeling dash movement. The final result should be a functional and responsive game where the player character can walk, run, jump, wall jump, and dash within a 2D game environment.
+Concluding with the YouTube video tutorial, I implemented multiple if statements that use these dashing variables to validate movement conditions, such as checking whether the player is already dashing, whether the dash cooldown timer has ended, and whether the player is allowed to dash based on their current state. These conditional checks perform real-time calculations to determine the dash direction, track the starting position of the dash, and measure the distance traveled so the dash does not exceed the defined maximum distance. The logic also responds differently when the player collides with obstacles during a dash, allowing the dash to stop early if a wall or other collider is detected. I also implemented logic to manage the dash cooldown by initializing, updating, and resetting a timer that prevents the player from dashing again until the cooldown is complete. Lastly, I configured the speed curve by navigating to "Dash Curve" in the "Inspector" and clicking on "New Curve" to modify the given curve line to control the speed of the dash over time, and I adjusted the curve so the dash begins at a high speed and gradually slows toward the end, creating a smooth and natural-feeling dash movement. The final result should be a functional and responsive game where the player character can walk, run, jump, wall jump, and dash within a 2D game environment.
 
 <ins> **Step 3: Task specification** </ins>
 <br>
@@ -74,305 +74,168 @@ The vertical wall obstacle should use a rectangular collision shape to ensure th
 
 <ins> Rubric Items </ins>
 <br>
-1.  The playable game is a 2D scene environment.
+1. The playable game is a 2D scene environment.
+- Open the main scene and confirm that it uses a type "Node2D" node to view the scene in the 2D editor.
+- The prompt requires that the project have a playable 2D game scene environment.
 
--   Open the main scene and confirm that it uses a type "Node2D" node to view the scene in the 2D editor.
--   The prompt requires that the project have a playable 2D game scene environment.
+2. The project's viewport width is 1152.
+- Confirm that the Viewport Width value is equal to 1152 by navigating to "Project Settings," then "Display," and then "Window."
+- The prompt requires that the project's resolution be 1152 x 648. Because these values are adjustable individually, they should each receive partial credit.
 
-2.  The project's viewport width is 1152.
+3. The project's viewpoint height is 648.
+- Confirm that the Viewport Height value is equal to 648 by navigating to "Project Settings," then "Display," and then "Window."
+- The prompt requires that the project's resolution be 1152 x 648. Because these values are adjustable individually, they should each receive partial credit.
 
--   Confirm that the Viewport Width value is equal to 1152 by navigating
-    to "Project Settings," then "Display," and then "Window."
--   The prompt requires that the project's resolution be 1152 x 648.
-    Because these values are adjustable individually, they should each
-    receive partial credit.
+4. The scene's background color is filled with the color #4d4d4d.
+- Verify that the Default Clear Color hex value is #4d4d4d by clicking on "Project Settings," then "Rendering," and then "Environment."
+- The prompt requires that the entire scene background have a color of #4d4d4d for the environment.
 
-3.  The project's viewpoint height is 648.
+5. The project's physics gravity value is 980 pixels/s^2.
+- Confirm that the Default Gravity value is equal to 980.0 px/s^2 by clicking on "Project Settings," then "Physics," and then "2D."
+- The prompt requires that the project's physics gravity be exactly 980.0 pixels per second squared for the environment.
 
--   Confirm that the Viewport Height value is equal to 648 by navigating
-    to "Project Settings," then "Display," and then "Window."
--   The prompt requires that the project's resolution be 1152 x 648.
-    Because these values are modifiable individually, they should each
-    receive partial credit.
+6. The sprite asset renders with a clearly visible pixel-art texture.
+- Run the game scene and visually confirm that the sprite asset appears with a sharp and crisp resolution texture.
+- The prompt requires that the sprite asset display a clearly visible pixel-art texture with crisp edges and preserved detail.
 
-4.  The scene's background color is filled with the color #4d4d4d.
+7. The sprite utilizes a pixelated Girl Knight carrying a sword and shield.
+- Run the game scene and visually confirm that only the pixelated Girl Knight sprite is visible as the player character.
+- The prompt requires that the sprite asset of an armored girl knight carrying a sword and shield must be the only player character.
 
--   Verify that the Default Clear Color hex value is #4d4d4d by clicking
-    on "Project Settings," then "Rendering," and then "Environment."
--   The prompt requires that the entire scene background have a color of
-    #4d4d4d for the environment.
+8. Pressing the left arrow key moves the player character to the left.
+- Run the main scene and press the left arrow key to observe the leftward movement direction.
+- Pressing the left arrow key should cause the sprite asset to move left, as required by the prompt.
 
-5.  The project's physics gravity value is 980 pixels/s^2.
-
--   Confirm that the Default Gravity value is equal to 980.0 px/s^2 by
-    clicking on "Project Settings," then "Physics," and then "2D."
--   The prompt requires that the project's physics gravity be exactly
-    980.0 pixels per second squared for the environment.
-
-6.  The sprite asset renders with a clearly visible pixel-art texture.
-
--   Run the game scene and visually confirm that the sprite asset
-    appears with a sharp and crisp resolution texture.
--   The prompt requires that the sprite asset display a clearly visible
-    pixel-art texture with crisp edges and preserved detail.
-
-7.  The sprite utilizes a pixelated Girl Knight carrying a sword and
-    shield.
-
--   Run the game scene and visually confirm that only the pixelated Girl
-    Knight sprite is visible as the player character.
--   The prompt requires that the sprite asset of an armored girl knight
-    carrying a sword and shield must be the only player character.
-
-8.  Pressing the left arrow key moves the player character to the left.
-
--   Run the main scene and press the left arrow key to observe the
-    leftward movement direction.
--   Pressing the left arrow key should cause the sprite asset to move
-    left, as required by the prompt.
-
-9.  Pressing the right arrow key moves the player character to the
-    right.
-
--   Run the main scene and press the right arrow key to observe the
-    rightward movement direction.
--   Pressing the right arrow key should cause the sprite asset to move
-    right, as required by the prompt.
+9. Pressing the right arrow key moves the player character to the right.
+- Run the main scene and press the right arrow key to observe the rightward movement direction.
+- Pressing the right arrow key should cause the sprite asset to move right, as required by the prompt.
 
 10. Pressing the Shift key makes the player character move faster.
-
--   Run the main scene and hold down the Shift key while pressing any
-    movement key to observe the sprite increase movement speed.
--   Pressing the Shift key should cause the sprite asset to run while
-    pressing the left or right arrow keys, as required by the prompt.
+- Run the main scene and hold down the Shift key while pressing any movement key to observe the sprite increase movement speed.
+- Pressing the Shift key should cause the sprite asset to run while pressing the left or right arrow keys, as required by the prompt.
 
 11. Pressing the Space key makes the player character jump up.
-
--   Run the main scene and press the Space key to observe the sprite
-    asset jump upward.
--   Pressing the Space key should cause the sprite asset to jump up, as
-    required by the prompt.
+- Run the main scene and press the Space key to observe the sprite asset jump upward.
+- Pressing the Space key should cause the sprite asset to jump up, as required by the prompt.
 
 12. Holding down the Space key makes the player character jump higher.
-
--   Run the main scene, press and hold down the Space key, and observe
-    the sprite asset jumping up higher.
--   Pressing and holding down the Space key should cause the sprite
-    asset to jump up higher, as required by the mechanic in the prompt.
+- Run the main scene, press and hold down the Space key, and observe the sprite asset jumping up higher.
+- Pressing and holding down the Space key should cause the sprite asset to jump up higher, as required by the mechanic in the prompt.
 
 13. Pressing the Ctrl key makes the player character quickly dash.
-
--   Run the main scene, press the Ctrl key while pressing a movement
-    key, and observe the sprite asset instantly dash towards a
-    direction.
--   Pressing the Ctrl key should cause the sprite asset to dash towards
-    a direction when moving, as required by the prompt.
+- Run the main scene, press the Ctrl key while pressing a movement key, and observe the sprite asset instantly dash towards a direction.
+- Pressing the Ctrl key should cause the sprite asset to dash towards a direction when moving, as required by the prompt.
 
 14. The player character stops moving when any input key is released.
-
--   Run the main scene, press any input action key, then release the
-    action key, and observe whether movement ceases instantly.
--   The prompt requires that the player character stop moving
-    immediately when any pressed input action key is released.
+- Run the main scene, press any input action key, then release the action key, and observe whether movement ceases instantly.
+- The prompt requires that the player character stop moving immediately when any pressed input action key is released.
 
 15. The player character uses a rectangular collision shape.
+- Open the player scene and inspect that it uses a "CollisionShape2D" child node with a 2D rectangle shape for body physics collision.
+- The prompt requires that the player character include appropriate physics and collision handling to support controlled movement.
 
--   Open the player scene and inspect that it uses a "CollisionShape2D"
-    child node with a 2D rectangle shape for body physics collision.
--   The prompt requires that the player character include appropriate
-    physics and collision handling to support controlled movement.
-
-16. The size of the collision rectangle shape is exactly 27.0 px by 60.5
-    px.
-
--   Confirm that the "Size" value is 27.0 x 60.5 px by clicking on the
-    first "CollisionShape2D" node and then "Rectangle" in the
-    "Inspector."
--   The prompt requires that the size value of the collision rectangle
-    shape must be 27.0 px by 60.5 px to match the size of the sprite.
+16. The size of the collision rectangle shape is exactly 27.0 px by 60.5 px.
+- Confirm that the "Size" value is 27.0 x 60.5 px by clicking on the first "CollisionShape2D" node and then "Rectangle" in the "Inspector."
+- The prompt requires that the size value of the collision rectangle shape must be 27.0 px by 60.5 px to match the size of the sprite.
 
 17. The player character uses the uploaded sprite asset texture.
-
--   Open the player scene and inspect that it uses a "Sprite2D" node
-    that uses the uploaded asset as the texture sprite for the game.
--   The prompt requires that the sprite asset of an armored girl knight
-    carrying a sword and shield must be the only player character.
+- Open the player scene and inspect that it uses a "Sprite2D" node that uses the uploaded asset as the texture sprite for the game.
+- The prompt requires that the sprite asset of an armored girl knight carrying a sword and shield must be the only player character.
 
 18. There is an invisible platform for the player character to move on.
-
--   Open the main scene and inspect that it uses a "StaticBody2D" child
-    node to add a platform with collision for the sprite to stand on.
--   The prompt requires that the game environment include appropriate
-    physics and collision handling to support controlled movement.
+- Open the main scene and inspect that it uses a "StaticBody2D" child node to add a platform with collision for the sprite to stand on.
+- The prompt requires that the game environment include appropriate physics and collision handling to support controlled movement.
 
 19. The invisible platform uses a world boundary collision shape.
+- Open the main scene and confirm that it uses a second "CollisionShape2D" node with a 2D world boundary shape.
+- The prompt requires that the game environment include appropriate physics and collision handling to support controlled movement.
 
--   Open the main scene and confirm that it uses a second
-    "CollisionShape2D" node with a 2D world boundary shape.
--   The prompt requires that the game environment include appropriate
-    physics and collision handling to support controlled movement.
-
-20. There is a wall obstacle for the player character to wall jump
-    against.
-
--   Open the main scene and confirm that it includes a second
-    "StaticBody2D" node to add a wall with collision for wall jumping.
--   The prompt requires that the game environment include appropriate
-    physics and collision handling to support controlled movement.
+20. There is a wall obstacle for the player character to wall jump against.
+- Open the main scene and confirm that it includes a second "StaticBody2D" node to add a wall with collision for wall jumping.
+- The prompt requires that the game environment include appropriate physics and collision handling to support controlled movement.
 
 21. The wall obstacle uses a rectangular collision shape.
-
--   Open the main scene and confirm that it uses a third
-    "CollisionShape2D" node with a rectangle shape for wall collision.
--   The prompt requires that the game environment include appropriate
-    physics and collision handling to support controlled movement.
+- Open the main scene and confirm that it uses a third "CollisionShape2D" node with a rectangle shape for wall collision.
+- The prompt requires that the game environment include appropriate physics and collision handling to support controlled movement.
 
 22. There is a ColorRect node to visualize the wall obstacle.
-
--   Open the main scene and inspect that it uses a "ColorRect" node to
-    visualize a wall obstacle collision for the sprite to wall jump
-    against.
--   The prompt requires that the main scene must have a vertical wall
-    obstacle for the sprite asset to collide with and wall jump against.
+- Open the main scene and inspect that it uses a "ColorRect" node to visualize a wall obstacle collision for the sprite to wall jump against.
+- The prompt requires that the main scene must have a vertical wall obstacle for the sprite asset to collide with and wall jump against.
 
 23. The entire wall obstacle is colored solid white.
-
--   Confirm that the color hex value is equal to #ffffff by clicking on
-    the "ColorRect" node, then clicking the "Color" box in the
-    "Inspector."
--   The prompt requires that the entire vertical wall obstacle have a
-    color of #ffffff to visualize the wall collision obstacle.
+- Confirm that the color hex value is equal to #ffffff by clicking on the "ColorRect" node, then clicking the "Color" box in the "Inspector."
+- The prompt requires that the entire vertical wall obstacle have a color of #ffffff to visualize the wall collision obstacle.
 
 24. The entire wall obstacle is not colored solid white.
-
--   Confirm that the color value is not equal to #ffffff by clicking on
-    the "ColorRect" node, then clicking the "Color" box in the
-    "Inspector."
--   The prompt requires that the entire vertical wall obstacle have a
-    color of exactly #ffffff to visualize the wall collision obstacle.
+- Confirm that the color value is not equal to #ffffff by clicking on the "ColorRect" node, then clicking the "Color" box in the "Inspector."
+- The prompt requires that the entire vertical wall obstacle have a color of exactly #ffffff to visualize the wall collision obstacle.
 
 25. The player character is consistently displayed on-screen.
-
--   Open the main scene and confirm that it uses a type "Camera2D" node
-    to always display the player character in the environment.
--   The prompt requires that the main scene must have a camera node to
-    always display the player character while it is in motion.
+- Open the main scene and confirm that it uses a type "Camera2D" node to always display the player character in the environment.
+- The prompt requires that the main scene must have a camera node to always display the player character while it is in motion.
 
 26. The sprite's walking speed is adjustable by a "walk_speed" variable.
-
--   Inspect the GDScript code for a modifiable "walk_speed" variable
-    affecting the walking movement speed of the player character.
--   The prompt requires that the GDScript code have an adjustable
-    walking movement speed through a modifiable variable.
+- Inspect the GDScript code for a modifiable "walk_speed" variable affecting the walking movement speed of the player character.
+- The prompt requires that the GDScript code have an adjustable walking movement speed through a modifiable variable.
 
 27. The sprite's running speed is adjustable by a "run_speed" variable.
-
--   Inspect the GDScript code for a modifiable "run_speed" variable
-    affecting the running movement speed of the player character.
--   The prompt requires that the GDScript code have an adjustable
-    running movement speed through a modifiable variable.
+- Inspect the GDScript code for a modifiable "run_speed" variable affecting the running movement speed of the player character.
+- The prompt requires that the GDScript code have an adjustable running movement speed through a modifiable variable.
 
 28. The sprite's movement speed increases by an "acceleration" variable.
-
--   Inspect the GDScript code for a modifiable "acceleration" variable
-    affecting the increased movement speed of the player character.
--   The prompt requires that the GDScript code have an adjustable
-    acceleration movement speed through a modifiable variable.
+- Inspect the GDScript code for a modifiable "acceleration" variable affecting the increased movement speed of the player character.
+- The prompt requires that the GDScript code have an adjustable acceleration movement speed through a modifiable variable.
 
 29. The sprite's movement speed decreases by a "deceleration" variable.
+- Inspect the GDScript code for a modifiable "deceleration" variable affecting the decreased movement speed of the player character.
+- The prompt requires that the GDScript code have an adjustable deceleration movement speed through a modifiable variable.
 
--   Inspect the GDScript code for a modifiable "deceleration" variable
-    affecting the decreased movement speed of the player character.
--   The prompt requires that the GDScript code have an adjustable
-    deceleration movement speed through a modifiable variable.
-
-30. The sprite's jumping action is adjustable by a "jump_force"
-    variable.
-
--   Inspect the GDScript code for a modifiable "jump_force" variable
-    affecting the jumping movement of the player character.
--   The prompt requires that the GDScript code have an adjustable
-    jumping movement value through a modifiable variable.
+30. The sprite's jumping action is adjustable by a "jump_force" variable.
+- Inspect the GDScript code for a modifiable "jump_force" variable affecting the jumping movement of the player character.
+- The prompt requires that the GDScript code have an adjustable jumping movement value through a modifiable variable.
 
 31. A "decelerate_on_jump_release" variable controls the jump height.
-
--   Inspect the GDScript code for a "decelerate_on_jump_release"
-    variable that controls the jump height of the player character.
--   The prompt requires that the GDScript code include a height jump
-    variable to allow the player control the sprite's jump height.
+- Inspect the GDScript code for a "decelerate_on_jump_release" variable that controls the jump height of the player character.
+- The prompt requires that the GDScript code include a height jump variable to allow the player control the sprite's jump height.
 
 32. The sprite's dashing speed is adjustable by a "dash_speed" variable.
-
--   Inspect the GDScript code for a modifiable "dash_speed" variable
-    affecting the dashing movement speed of the player character.
--   The prompt requires that the GDScript code have an adjustable
-    dashing movement speed through a modifiable variable.
+- Inspect the GDScript code for a modifiable "dash_speed" variable affecting the dashing movement speed of the player character.
+- The prompt requires that the GDScript code have an adjustable dashing movement speed through a modifiable variable.
 
 33. The maximum dash is adjustable by a "dash_max_distance" variable.
-
--   Inspect the GDScript code for a modifiable "dash_max_distance"
-    variable affecting the maximum dash distance of the sprite asset.
--   The prompt requires that the GDScript code have an adjustable
-    maximum dash distance through a modifiable variable.
+- Inspect the GDScript code for a modifiable "dash_max_distance" variable affecting the maximum dash distance of the sprite asset.
+- The prompt requires that the GDScript code have an adjustable maximum dash distance through a modifiable variable.
 
 34. The sprite's dashing curve is adjustable by a "dash_curve" variable.
+- Inspect the GDScript code for a modifiable "dash_curve" variable affecting the dashing movement curve of the player character.
+- The prompt requires that the GDScript code have an adjustable dashing movement curve through a modifiable variable.
 
--   Inspect the GDScript code for a modifiable "dash_curve" variable
-    affecting the dashing movement curve of the player character.
--   The prompt requires that the GDScript code have an adjustable
-    dashing movement curve through a modifiable variable.
-
-35. The sprite's dashing limit is adjustable by a "dash_cooldown"
-    variable.
-
--   Inspect the GDScript code for a modifiable "dash_cooldown" variable
-    affecting the dashing cooldown of the player character.
--   The prompt requires that the GDScript code have an adjustable
-    dashing cooldown limit through a modifiable variable.
+35. The sprite's dashing limit is adjustable by a "dash_cooldown" variable.
+- Inspect the GDScript code for a modifiable "dash_cooldown" variable affecting the dashing cooldown of the player character.
+- The prompt requires that the GDScript code have an adjustable dashing cooldown limit through a modifiable variable.
 
 36. The dash curve starts dashing fast and slows down towards the end.
-
--   Click on the "Dash Curve" drop-down to confirm that the curve line
-    on the graph starts high and gradually decreases until a point.
--   The prompt requires the dash curve to be configurable, starting fast
-    and gradually slowing down to control the dash speed behavior.
+- Click on the "Dash Curve" drop-down to confirm that the curve line on the graph starts high and gradually decreases until a point.
+- The prompt requires the dash curve to be configurable, starting fast and gradually slowing down to control the dash speed behavior.
 
 37. The Input Map includes a "left" action bound to the left arrow key.
+- Confirm an input action exists with the left arrow key by navigating to "Project Settings" and then to "Input Map" to see the "Action" list.
+- The prompt requires that the left arrow key be assigned as a keyboard input action to control the player character in the scene.
 
--   Confirm an input action exists with the left arrow key by navigating
-    to "Project Settings" and then to "Input Map" to see the "Action"
-    list.
--   The prompt requires that the left arrow key be assigned as a
-    keyboard input action to control the player character in the scene.
-
-38. The Input Map includes a "right" action bound to the right arrow
-    key.
-
--   Confirm an input action exists with the right arrow key by
-    navigating to "Project Settings" and then to "Input Map" to see the
-    "Action" list.
--   The prompt requires that the right arrow key be assigned as a
-    keyboard input action to control the player character in the scene.
+38. The Input Map includes a "right" action bound to the right arrow key.
+- Confirm an input action exists with the right arrow key by navigating to "Project Settings" and then to "Input Map" to see the "Action" list.
+- The prompt requires that the right arrow key be assigned as a keyboard input action to control the player character in the scene.
 
 39. The Input Map includes a "run" action bound to the Shift key.
-
--   Confirm an input action exists with the Shift key by navigating to
-    "Project Settings" and then to "Input Map" to see the "Action" list.
--   The prompt requires that the Shift key be assigned as a keyboard
-    input action to control the player character in the scene.
+- Confirm an input action exists with the Shift key by navigating to "Project Settings" and then to "Input Map" to see the "Action" list.
+- The prompt requires that the Shift key be assigned as a keyboard input action to control the player character in the scene.
 
 40. The Input Map includes a "jump" action bound to the Space key.
-
--   Confirm an input action exists with the Space key by navigating to
-    "Project Settings" and then to "Input Map" to see the "Action" list.
--   The prompt requires that the Space key be assigned as a keyboard
-    input action to control the player character in the scene.
+- Confirm an input action exists with the Space key by navigating to "Project Settings" and then to "Input Map" to see the "Action" list.
+- The prompt requires that the Space key be assigned as a keyboard input action to control the player character in the scene.
 
 41. The Input Map includes a "dash" action bound to the Ctrl key.
-
--   Confirm an input action exists with the Ctrl key by navigating to
-    "Project Settings" and then to "Input Map" to see the "Action" list.
--   The prompt requires that the Ctrl key be assigned as a keyboard
-    input action to control the player character in the scene.
-
+- Confirm an input action exists with the Ctrl key by navigating to "Project Settings" and then to "Input Map" to see the "Action" list.
+- The prompt requires that the Ctrl key be assigned as a keyboard input action to control the player character in the scene.
+<br>
 Godot - https://feather.openai.com/tasks/8e78a10d-9c88-46e7-b9ed-33059ea90a68 - Signed off.
