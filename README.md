@@ -8,6 +8,8 @@ This tutorial video is designed as a friendly follow-along project that walks vi
 # Assets #
 [Girl Knight Character Asset](https://jumpbutton.itch.io/girlknightasset) by [JumpButton](https://jumpbutton.itch.io/) ([Ko-fi](https://ko-fi.com/jump_button))
 
+![Sprite Asset](Sprites/Idle_KG_1.png)
+
 # Create a Godot task #
 <ins> **Step 1: Context setting** </ins>
 <br>
