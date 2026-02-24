@@ -3,6 +3,8 @@
 # 2D Movement Tutorial #
 [Godot Tutorial 2D - Beginner Level Platformer Controller](https://www.youtube.com/watch?v=aQazVHDztsg)
 
+This tutorial video is designed as a friendly follow-along project that walks viewers through the practical construction of a 2D player controller, illustrating how movement logic, physics handling, input systems, and animation behaviors are typically organized and implemented within the Godot Engine to create a functional 2D platforming game. It also served as the foundation for completing a structured implementation task on Feather, with the project integrated into the wider development workflow supporting the Handshake AI Project Moonstone initiative.
+
 # Assets #
 [Girl Knight Character Asset](https://jumpbutton.itch.io/girlknightasset) by [JumpButton](https://jumpbutton.itch.io/) ([Ko-fi](https://ko-fi.com/jump_button))
 
