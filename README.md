@@ -1,7 +1,7 @@
 [![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.3-blue?style=plastic&logo=godotengine)](https://godotengine.org/) ![GitHub top language](https://img.shields.io/github/languages/top/Chaotic-Legend/2D-Movement-Tutorial?logo=godotengine)
 
 # 2D Movement Tutorial #
-[Godot Tutorial 2D - Beginner Level Platformer Controller](https://www.youtube.com/watch?v=aQazVHDztsg)
+[Godot Tutorial 2D - Beginner Level Platformer Controller](https://www.youtube.com/watch?v=aQazVHDztsg) by [IcyEngine](https://icyengine.itch.io/) ([Discord](https://discord.com/invite/Ev9g6kBPnN))
 
 This tutorial video is designed as a friendly follow-along project that walks viewers through the practical construction of a 2D player controller, illustrating how movement logic, physics handling, input systems, and animation behaviors are typically organized and implemented within the Godot Engine to create a functional 2D platforming game. It also served as the foundation for completing a structured implementation task on Feather, with the project integrated into the wider development workflow supporting the Handshake AI Project Moonstone initiative.
 
@@ -62,11 +62,11 @@ Prompt reference file(s).
 
 <ins> Reference link/description </ins>
 <br>
-Godot Tutorial 2D - Beginner Level Platformer Controller by IcyEngine: https://www.youtube.com/watch?v=aQazVHDztsg
+Godot Tutorial 2D - Beginner Level Platformer Controller by [IcyEngine](https://www.youtube.com/@IcyEngine): https://www.youtube.com/watch?v=aQazVHDztsg
 
 <ins> Reference link/description </ins>
 <br>
-Girl Knight Character Asset from the Knight_player_1.4 Pack by JumpButton: https://jumpbutton.itch.io/girlknightasset
+Girl Knight Character Asset from the Knight_player_1.4 Pack by [JumpButton](https://x.com/jump_button): https://jumpbutton.itch.io/girlknightasset
 
 <ins> Final Prompt </ins>
 <br>
