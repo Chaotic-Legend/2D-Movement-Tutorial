@@ -241,5 +241,3 @@ The vertical wall obstacle should use a rectangular collision shape to ensure th
 41. The Input Map includes a "dash" action bound to the Ctrl key.
 - Confirm an input action exists with the Ctrl key by navigating to "Project Settings" and then to "Input Map" to see the "Action" list.
 - The prompt requires that the Ctrl key be assigned as a keyboard input action to control the player character in the scene.
-<br>
-Godot - https://feather.openai.com/tasks/8e78a10d-9c88-46e7-b9ed-33059ea90a68 - Signed off.
