@@ -1,6 +1,6 @@
 [![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.3-blue?style=plastic&logo=godotengine)](https://godotengine.org/) ![GitHub top language](https://img.shields.io/github/languages/top/Chaotic-Legend/2D-Movement-Tutorial?logo=godotengine)
 
-# 2D Movement Tutorial #
+# 2D Movement Tutorial | Project Moonstone #
 [Godot Tutorial 2D - Beginner Level Platformer Controller](https://www.youtube.com/watch?v=aQazVHDztsg) by [IcyEngine](https://icyengine.itch.io/) ([Discord](https://discord.com/invite/Ev9g6kBPnN))
 
 This tutorial video is a friendly, follow-along project that walks viewers through the practical construction of a 2D player controller, illustrating how movement logic, physics handling, input systems, and animation behaviors are typically organized and implemented in the Godot Engine to create a functional 2D platforming game. It also served as the foundation for completing a structured implementation task on Feather, with the project integrated into the wider development workflow supporting the Handshake AI Project Moonstone initiative.
@@ -241,3 +241,17 @@ The vertical wall obstacle should use a rectangular collision shape to ensure th
 41. The Input Map includes a "dash" action bound to the Ctrl key.
 - Confirm an input action exists with the Ctrl key by navigating to "Project Settings" and then to "Input Map" to see the "Action" list.
 - The prompt requires that the Ctrl key be assigned as a keyboard input action to control the player character in the scene.
+
+---
+
+# 2D Movement Tutorial | Project Touchstone #
+[Godot Tutorial 2D - Beginner Level Platformer Controller](https://www.youtube.com/watch?v=aQazVHDztsg) by [IcyEngine](https://icyengine.itch.io/) ([Discord](https://discord.com/invite/Ev9g6kBPnN))
+
+This tutorial video is a friendly, follow-along project that walks viewers through the practical construction of a 2D player controller, illustrating how movement logic, physics handling, input systems, and animation behaviors are typically organized and implemented in the Godot Engine to create a functional 2D platforming game. It also served as the foundation for completing a structured implementation task on Feather, with the project integrated into the wider development workflow supporting the Handshake AI Project Moonstone initiative.
+
+# Assets #
+[Girl Knight Character Asset](https://jumpbutton.itch.io/girlknightasset) by [JumpButton](https://jumpbutton.itch.io/) ([Ko-fi](https://ko-fi.com/jump_button))
+
+![Sprite Asset](Sprites/Idle_KG_1.png)
+
+# Create a Godot task #
