@@ -272,7 +272,18 @@ Reminder on the difference between reference and starting state files:
 
 <ins> Task prompt (ask the Employee) </ins>
 <br>
+We are beginning development for the player controller of a new 2D pixel-art platformer prototype. Your task is to design and implement a functional player movement system using a pixelated sprite of a girl knight character, establishing the core mechanics and a responsive gameplay foundation. The movement system should emphasize smooth, precise, and consistent control by incorporating well-structured keyboard input handling, realistic physics behavior, and a responsive camera system. It is important to maintain the visual clarity and sharpness expected in a pixel-art environment, ensuring that all assets render cleanly without any distortion. You will set up the necessary nodes, apply the pixelated character sprite, and configure collision and physics properties to ensure proper interaction with the environment. The player character must respond to keyboard inputs for horizontal movement and jumping and demonstrate consistent, natural physics behavior throughout gameplay. The player character must remain visible and tracked in the camera view throughout gameplay to ensure a consistent on-screen experience. The completed movement system should support the following abilities:
 
+- Horizontal movement allows the player character to walk left.
+- Horizontal movement allows the player character to walk right.
+- A single jump enables the player character to propel upward.
+- A variable jump height provides better control over jump height.
+- Wall jumping allows the player to ascend upward along the wall.
+- Sprinting at a running speed allows for faster horizontal movement.
+- A directional dash movement for short bursts of horizontal speed.
+- Movement includes acceleration and deceleration for transitions.
+
+The system should ensure that vertical motion behaves consistently and predictably, with gravity naturally pulling the player character downward to support realistic and functional movement during falls and jumps. Interactions with the environment must be stable and precise, allowing the character to move seamlessly across surfaces, respond accurately to barriers, and maintain proper positioning without unintended overlap or clipping. The completed implementation should result in an interactive scene where all core traversal mechanics function cohesively within a minimal environment containing at least one structural element. The environment should include a clearly defined rectangular vertical wall that serves as a dedicated obstacle for wall-jumping interactions. This wall must be entirely white in color to ensure strong visual contrast, making it easy to identify and effectively supporting gameplay readability during wall jumping mechanics. Overall behavior should demonstrate tight responsiveness, smooth transitions between actions, and a level of polish that supports further extension and refinement.
 
 <ins> Which of the following best fits this task? </ins>
 <br>
@@ -293,7 +304,7 @@ Reminder on the difference between the starting state and the reference files:
 
 <ins> Starting state description </ins>
 <br>
-
+The starting state for this task is a 2D project layout that acts as a foundational framework for creating a pixel-art platformer, utilizing a character sprite sheet developed during the initial phase. The environment consists of a simple 2D scene configured for testing movement and interactions, with organized folders prepared for assets, scenes, scripts, and resources. The player character is represented by a single idle frame from a pixelated Girl Knight sprite sheet, serving as the primary texture asset and starting state file for the 2D movement system. When running the starting state, the project displays the empty level and spawns the player character with its collision body, but all movement mechanics, input handling, and camera behavior remain inactive. The current scene and player controller script require modification and expansion to implement core movement systems. Completing this task will involve setting up functional input actions, defining physics behavior, and configuring the environment to support responsive player interactions, while maintaining a clean and extensible project structure. This setup provides all necessary components to begin developing the player movement system while ensuring the environment and assets are ready for further expansion, testing, and refinement.
 
 ### **Overall context** ###
 Finally, include context on this task and why it is realistic and representative of real-life work:
