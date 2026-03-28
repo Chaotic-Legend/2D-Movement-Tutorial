@@ -306,7 +306,60 @@ Finally, include context on this task and why it is realistic and representative
 
 <ins> Rubric Items </ins>
 <br>
+1. The background color of the project environment is dark gray.
+- Run the main scene and observe that the environment's background color remains a consistent dark gray throughout the entire level.
+- The prompt requires a level background in dark gray, ensuring the color remains consistent with and appropriate for the environment.
 
+2. The gravity physics produces a natural and consistent downward pull.
+- Run the main scene and observe the player character falling to confirm that gravity causes a natural downward acceleration.
+- The prompt requires that the environment's gravity produce realistic falling behavior and a consistent downward pull for entities.
 
+3. The girl knight character sprite appears sharp during gameplay.
+- Run the main scene and observe the player character sprite to confirm that the pixel girl knight appears sharp and crisp.
+- The prompt requires that the girl knight character sprite remain sharp and clearly visible throughout gameplay.
+
+4. There is a rectangular vertical wall obstacle in the environment.
+- Run the main scene and observe the environment to confirm that a rectangular vertical wall obstacle is present during gameplay.
+- The prompt requires that the environment include a clearly defined rectangular wall obstacle for the player to wall jump against.
+
+5. The color of the entire rectangular vertical wall obstacle is white.
+- Run the main scene and observe the rectangular wall obstacle to confirm that its entire texture is white during gameplay.
+- The prompt requires that the rectangular vertical wall obstacle be fully white in color to distinguish it within the environment.
+
+6. The player character can move left or right using the arrow keys.
+- Run the main scene, press the left arrow key first, and then the right arrow key to observe that the player character moves left and right.
+- The prompt requires the left and right arrow keys to be assigned as keyboard input actions to move the player character left and right.
+
+7. The player character can jump upward when pressing the Space key.
+- Run the main scene, press the Space key on your keyboard, and observe that the player character jumps up in the level environment.
+- The prompt requires assigning the Space key as a keyboard input action to make the player character jump during gameplay.
+
+8. The player character can jump higher when holding the Space key.
+- Run the main scene, quickly tap the Space key for a normal jump, and then press and hold the Space key for a high jump.
+- The prompt requires that pressing and holding the Space key should cause the player character to perform a high jump.
+
+9. The player character can wall jump upward along the vertical wall.
+- Run the main scene, press the Space key while against the vertical wall, and verify that the character can jump upward along the wall.
+- The prompt requires that the player character can wall jump and ascend when jumping upward against any vertical wall surface.
+
+10. The player character can quickly sprint when pressing the Shift key.
+- Run the main scene, press and hold down the Shift key while moving left or right, and verify that the character starts sprinting.
+- The task prompt requires that the player character can sprint to increase horizontal movement speed throughout the environment.
+
+11. The player character can quickly dash when pressing the Ctrl key.
+- Run the main scene, press the Ctrl key while pressing a movement key, and observe the sprite asset instantly dash towards a direction.
+- The task prompt requires that the player character can quickly dash for a short burst of horizontal movement to increase speed.
+
+12. The player character stops moving when any input key is released.
+- Run the main scene, press any input action key, then release the action key, and observe whether movement ceases instantly.
+- The prompt requires that the player character stop moving immediately when any pressed input action key is released.
+
+13. The player character properly collides with the level environment.
+- Run the main scene and move the player across platforms and into walls, confirming the character does not pass through solid terrain.
+- The prompt requires the player character to have a functional body collision to interact accurately with the level environment.
+
+14. The camera follows the player character smoothly during gameplay.
+- Run the main scene and move the player character across the level to confirm that the game camera accurately tracks the player.
+- The prompt requires smooth camera tracking to maintain a stable and consistent view of the player character throughout gameplay.
 <br>
 Godot - https://feather.openai.com/tasks/03fac6e6-358e-4ed6-9d13-ed835641a5d4/stage/prompt_creation - Work on prompt creation.
