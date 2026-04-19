@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://3je2ulibqjke"]
+
+[ext_resource type="PackedScene" uid="uid://dug87232vl1ke" path="res://Scenes/ui_in_game.tscn" id="1_kry3j"]
+[ext_resource type="PackedScene" uid="uid://c3mafehiyuja0" path="res://Scenes/terrain.tscn" id="2_21xkr"]
+[ext_resource type="PackedScene" uid="uid://dlehtl00a2jww" path="res://Scenes/animated_player.tscn" id="3_6bp64"]
+[ext_resource type="PackedScene" uid="uid://x1snh0pb3m25" path="res://Scenes/chest.tscn" id="4_21xkr"]
+[ext_resource type="PackedScene" uid="uid://dxusqj4hglowm" path="res://Scenes/coin.tscn" id="4_344ge"]
+[ext_resource type="PackedScene" uid="uid://d0kgu6j3n6c2x" path="res://Scenes/spike.tscn" id="5_ynf5e"]
+
+[node name="Main" type="Node2D" unique_id=1781627828]
+
+[node name="UIInGame" parent="." unique_id=1489070011 instance=ExtResource("1_kry3j")]
+
+[node name="UIHealtbar" parent="UIInGame" index="2" unique_id=69136775]
+start_hp = 10
+
+[node name="Terrain" parent="." unique_id=93215006 instance=ExtResource("2_21xkr")]
+z_index = 1
+
+[node name="AnimatedPlayer" parent="." unique_id=466792176 node_paths=PackedStringArray("ui_dash_cooldown") instance=ExtResource("3_6bp64")]
+z_index = 5
+position = Vector2(655, 385)
+ui_dash_cooldown = NodePath("../UIInGame/UIAbilityCooldown")
+
+[node name="Camera2D" type="Camera2D" parent="AnimatedPlayer" unique_id=1165821615]
+zoom = Vector2(2, 2)
+process_callback = 0
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+
+[node name="Chest" parent="." unique_id=1493693830 instance=ExtResource("4_21xkr")]
+z_index = 3
+position = Vector2(430, 135)
+
+[node name="Coin" parent="." unique_id=1953137067 instance=ExtResource("4_344ge")]
+z_index = 2
+position = Vector2(1160, 520)
+
+[node name="Coin2" parent="." unique_id=557047442 instance=ExtResource("4_344ge")]
+z_index = 2
+position = Vector2(911, 130)
+
+[node name="Coin3" parent="." unique_id=1250981073 instance=ExtResource("4_344ge")]
+z_index = 2
+position = Vector2(1456, 213)
+
+[node name="Coin4" parent="." unique_id=1513188736 instance=ExtResource("4_344ge")]
+z_index = 2
+position = Vector2(-177, 610)
+
+[node name="Spike" parent="." unique_id=1155301423 instance=ExtResource("5_ynf5e")]
+z_index = 2
+position = Vector2(845, 600)
+
+[node name="Spike2" parent="." unique_id=1067610677 instance=ExtResource("5_ynf5e")]
+z_index = 2
+position = Vector2(1485, 536)
+
+[node name="Spike3" parent="." unique_id=1249023042 instance=ExtResource("5_ynf5e")]
+z_index = 2
+position = Vector2(1665, 312)
+
+[node name="Spike4" parent="." unique_id=1461504560 instance=ExtResource("5_ynf5e")]
+z_index = 2
+position = Vector2(-110, 696)
+
+[editable path="UIInGame"]

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://b6k8ndcxow212"]
+
+[ext_resource type="Script" uid="uid://d34rj7yjmlfwj" path="res://Scripts/ui_coin_counter.gd" id="1_ilsbt"]
+[ext_resource type="Texture2D" uid="uid://c66fssahr3ewb" path="res://Sprites/coin1.png" id="2_cjgea"]
+
+[node name="UICoinCounter" type="HBoxContainer" unique_id=2004586013]
+offset_right = 110.0
+offset_bottom = 64.0
+theme_override_constants/separation = 20
+script = ExtResource("1_ilsbt")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=672324297]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+texture = ExtResource("2_cjgea")
+expand_mode = 1
+
+[node name="CountLabel" type="Label" parent="." unique_id=480239605]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.84313726, 0, 1)
+theme_override_font_sizes/font_size = 46
+text = "0"

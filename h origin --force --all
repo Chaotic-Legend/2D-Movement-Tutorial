@@ -1,0 +1,113 @@
+[33mcommit c6eb9a4c4fcdf8a3a3440ebc9d01a9bc6a4a449e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Chaotic-Legend <gamemasterx40@gmail.com>
+Date:   Sun Apr 19 17:30:02 2026 -0400
+
+    Updated the entire project with new assets and UI elements.
+
+[33mcommit b13d7c353ae03e4f8832e0f18b451fab3dbe215c[m
+Author: Chaotic-Legend <gamemasterx40@gmail.com>
+Date:   Mon Jan 6 22:31:26 2025 +0100
+
+    Some minor changes
+
+[33mcommit 2213ef57fed40569098ff759efbd939d1bbd2923[m
+Author: Chaotic-Legend <gamemasterx40@gmail.com>
+Date:   Fri Jan 3 22:22:08 2025 +0100
+
+    Added more examples + resizing old ones
+
+[33mcommit aeba1fba178dbfbcb4e1a2f55817a41f0e0b87bc[m
+Author: Chaotic-Legend <gamemasterx40@gmail.com>
+Date:   Wed Jan 1 15:33:26 2025 +0100
+
+    Added screen dimensions display to top left corner
+
+[33mcommit a1cc5b9d1089b2e58b70d8e3c79d204b5f010276[m
+Author: Chaotic-Legend <gamemasterx40@gmail.com>
+Date:   Tue Dec 31 15:00:48 2024 +0100
+
+    Added responsive vs non-responsive designs
+
+[33mcommit c2dfe1f526bc9e7cdaf3b2c7c7ff051bd976d568[m
+Author: Chaotic-Legend <gamemasterx40@gmail.com>
+Date:   Mon Dec 30 14:06:43 2024 +0100
+
+    Resized screen for a bit
+
+[33mcommit a434c6f69233f06019cb919a30eb30282230b757[m
+Author: Chaotic-Legend <gamemasterx40@gmail.com>
+Date:   Mon Dec 30 13:38:41 2024 +0100
+
+    Added container examples
+
+[33mcommit d5f51fd6f3e7d6f023641cc32411cc069435eb33[m
+Author: Chaotic-Legend <gamemasterx40@gmail.com>
+Date:   Mon Dec 30 11:33:08 2024 +0100
+
+    Removed unused line
+
+[33mcommit e44086ad2d8a7ff074c11299e2b3bdb9218935ca[m
+Author: Chaotic-Legend <gamemasterx40@gmail.com>
+Date:   Sun Dec 29 22:42:32 2024 +0100
+
+    Added many examples
+
+[33mcommit 3671b118ff518c0d1dbbbfbecbc2b31048c9bbcc[m
+Author: Chaotic-Legend <gamemasterx40@gmail.com>
+Date:   Sun Dec 29 16:17:47 2024 +0100
+
+    Slight adjustments to the text of x/y labels
+
+[33mcommit 3cdc7dc2e4a9a8bd05dbda597570cf9001b9ced4[m
+Author: Chaotic-Legend <gamemasterx40@gmail.com>
+Date:   Sun Dec 29 16:12:42 2024 +0100
+
+    Added cookie clicker
+
+[33mcommit 81dd38651eab6de5bb3a42ae1e0894a039be8d2b[m
+Author: Chaotic-Legend <gamemasterx40@gmail.com>
+Date:   Sun Dec 29 16:10:06 2024 +0100
+
+    Added examples of changing text with str()
+
+[33mcommit eccafa33396b7a40e96a545034bcc9669a562acd[m
+Author: Chaotic-Legend <gamemasterx40@gmail.com>
+Date:   Sun Dec 29 15:54:08 2024 +0100
+
+    Center alignment + label font size
+
+[33mcommit b607276f1588a093040be69fd6a9d78a57cc7a10[m
+Author: Chaotic-Legend <gamemasterx40@gmail.com>
+Date:   Sun Dec 29 15:51:56 2024 +0100
+
+    Added counter example
+
+[33mcommit 0006f59d204760bb10aa93327bd3163f8b0566c6[m
+Author: Chaotic-Legend <gamemasterx40@gmail.com>
+Date:   Sun Dec 29 15:50:37 2024 +0100
+
+    Added text changing
+
+[33mcommit e9d7d8d3cfa096eb6cfbe075b1e3e9fdcc657c61[m
+Author: Chaotic-Legend <gamemasterx40@gmail.com>
+Date:   Thu Dec 12 14:39:32 2024 +0100
+
+    Final?
+
+[33mcommit b50f575a95758582c1c825cdeeffa04231c5dd55[m
+Author: Chaotic-Legend <gamemasterx40@gmail.com>
+Date:   Thu Dec 12 14:26:20 2024 +0100
+
+    Sorta finshed
+
+[33mcommit 186b94c67c9160e07bd7d88ebe9d2a1a3cc3ae3a[m
+Author: Chaotic-Legend <gamemasterx40@gmail.com>
+Date:   Mon Nov 4 15:00:21 2024 +0100
+
+    Initial project state
+
+[33mcommit 838443b90c3647deaffd317499831dd8823ab1bc[m
+Author: Chaotic-Legend <gamemasterx40@gmail.com>
+Date:   Mon Nov 4 14:57:14 2024 +0100
+
+    Initial commit
